@@ -1,0 +1,87 @@
+/* Style for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transition: background 400ms ease-in;
+  }
+  
+  /* Adjusted size for the modal content */
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 15px; /* Adjusted padding for a smaller size */
+    max-width: 800px; /* Set a maximum width */
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .modal-image {
+
+    max-width: 100%; 
+    height: auto; 
+  }
+  .prev, .next {
+  	display: inline-block;
+	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid #283eb9;
+	border-radius: 2px;
+	background-color: #283eb9;
+	color: #ffffff;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+  }
+
+  .prev:hover, .next:hover {
+	background-color: transparent;
+	color: #283eb9; 
+	text-decoration: none;
+}
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Add a transition for a smooth animation */
+  .modal-content, .modal-content img {
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on the close button */
+  .close:hover {
+    color: #555;
+  }
+  
+  /* Hover effect on the modal content */
+  .modal-content:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Hover effect on the modal content image */
+  .modal-content img:hover {
+    transform: scale(1.1);
+  }
+
+  .modal-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  

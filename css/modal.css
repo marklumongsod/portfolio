@@ -21,7 +21,7 @@
     background-color: white;
     padding: 15px; /* Adjusted padding for a smaller size */
     max-width: 800px; /* Set a maximum width */
-    width: 100%;
+    width: 120%;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
